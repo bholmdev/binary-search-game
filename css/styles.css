@@ -1,0 +1,21 @@
+body {
+    margin: 1rem;
+  }
+  
+  ol {
+    counter-reset: n;
+  }
+  
+  ol > li {
+    list-style: none;
+    counter-increment: n;
+  }
+  
+  ol > li::before {
+    content: "Challenge " counter(n) ":";
+    font-weight: bold;
+  }
+  
+  .btn {
+      display: none;
+  }
