@@ -18,6 +18,7 @@
             <div class="col">
                 <button class="btn btn-primary" id="startBtn">?</button>
                 <button class="btn btn-primary" id="guessBtn"></button>
+                <button class="btn btn-danger" id="resetBtn">Reset</button>
             </div>
         </div>
         <div class="row">
@@ -30,7 +31,6 @@
                 <div class="btn-group" role="group">
                     <button id="yesBtn" class="btn btn-success">Yes</button>
                     <button id="noBtn" class="btn btn-warning">No</button>
-                    <button class="btn btn-danger" id="#resetBtn">Reset</button>
                 </div>
                 <div class="btn-group" role="group">
                     <button id="higherBtn" class="btn btn-dark">Higher</button>
@@ -41,37 +41,6 @@
         </div>
     </div>
     
-    <!-- Explanation -->
-    <hr />
-    <p>This game demonstrates a classic programming algorithm: <strong>binary search</strong>. When tasked with finding a number within a range using binary search, the computer will always guess in the middle of the range. By using this algorithm, it will find your number in 7 or less tries every time (for 100 numbers) -- a vast performance improvement over a random or sequential search.</p>
-    <p>Take time to read over the code and play the game several times to make sure you understand its flow before you begin the tasks for this assignment.</p>
-    
-    <h3>Code Challenge</h3>
-    <ol>
-        <li> You will use Bootstrap to adjust the user interface. For this task, you will only need to update code in the HTML section. 
-            <ul>
-                <li>First, use a Bootstrap class to <strong>vertically</strong> align the text <strong>"My guess is"</strong> in the row so that it is <strong>centered</strong> instead of top aligned.</li>
-                <li>Next, modify the column class for the first column in the first row of the grid so that it spans across <strong>2 out of the 12</strong> columns of the row for <strong>small and up</strong> viewports. The two columns in the row should stack vertically for <strong>XS viewports</strong>.</li>
-                <li>Lastly, using a Bootstrap <strong>spacing utility class</strong>, give the first row a Bootstrap class that will <strong>increase the bottom margin of the row</strong>, as seen in the screenshot.</li>
-            </ul>
-        <li> When the game is finished, add a way to <strong>reset</strong> the game. Add a "Reset" button that only appears once the correct guess has been made, and when it's clicked, cause it to reset to the very beginning setup where it says 'Think of a number between 1-100 and click the blue button when you're ready.' Do not use the .reload() method for this task. Instead, within the reset function, use the provided <strong>toggleBtn()</strong> function to set the correct states for the buttons. Also reset the game variables to their initial values. For this task, you will need to update code in the JavaScript and HTML sections.</li>
-        <li>
-    Right now, if you were to just keep clicking that the guess is incorrect, it would go forever. Can you update this game so that it can evaluate whether you are giving it nonsensical answers?
-        </li>
-    </ol>
-    
-        <p><strong>Bonus Challenge</strong>: Can you find any other ways to improve and/or further extend this starter code? There is no one right answer to this challenge, it's just meant to ask you to think critically and experiment with what you have learned. It could be anything from improving the logical structure to adding a cool animation or image when the correct answer is guessed, or replacing the jQuery event handling with vanilla JS instead, or continuously displaying the current number of guesses, or whatever else you can imagine.</p>
-        
-    <h3>Resources</h3>
-    <ul>
-        <li><a href="https://getbootstrap.com/docs/4.0/layout/grid" target="_blank">Bootstrap Grid</a></li>
-        <li><a href="https://getbootstrap.com/docs/4.0/components/collapse/#via-javascript" target="_blank">Bootstrap Collapse - via JavaScript</a></li>
-        <li><a href="https://www.w3schools.com/jsref/met_element_addeventlistener.asp" target="_blank">W3Schools - addEventListener</a></li>
-        <li><a href="https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp" target="_blank">W3Schools - disabled button property</a></li>    
-    </ul>
-        
-    <!-- original codepen by minae lee -->
-    <!-- note: this codepen uses bootstrap CSS and JS files linked in the settings -->
     <script src="./js/binary-search-game.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
